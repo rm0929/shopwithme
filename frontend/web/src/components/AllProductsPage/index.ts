@@ -1,0 +1,1 @@
+export { default as FilterSideBar2 } from "./FilterSideBar2";

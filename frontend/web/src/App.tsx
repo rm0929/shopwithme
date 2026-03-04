@@ -1,13 +1,18 @@
-import './global.css'
+import { Route, Routes } from "react-router";
+import { HomePage, AllProductsPage } from "@/pages";
 
 function App() {
-
   return (
-    // <div className="flex items-center justify-center h-screen">
-      // <h1 className="text-4xl font-bold text-gray-800">Hello, World!</h1>
-      <h1>Hello World!</h1>
-    // </div>
-  )
+    <Routes>
+      {/* Landing Route */}
+      <Route path="/" element={<HomePage />} />
+
+      {/* Other routes */}
+      <Route path="/products" element={<AllProductsPage />} />
+
+      {/* Protected Routes */}
+    </Routes>
+  );
 }
 
-export default App
+export default App;
