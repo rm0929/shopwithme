@@ -1,0 +1,129 @@
+# -----------------------------
+
+# General
+
+# -----------------------------
+
+.DS_Store
+Thumbs.db
+*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# -----------------------------
+
+# Environment files
+
+# -----------------------------
+
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+
+# Node dependencies
+
+# -----------------------------
+
+node_modules/
+**/node_modules/
+
+# -----------------------------
+
+# Vite / React build output
+
+# -----------------------------
+
+dist/
+build/
+**/dist/
+**/build/
+
+# -----------------------------
+
+# Vite cache
+
+# -----------------------------
+
+node_modules/.vite
+.vite/
+
+# -----------------------------
+
+# IDE / Editor
+
+# -----------------------------
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -----------------------------
+
+# Coverage / Testing
+
+# -----------------------------
+
+coverage/
+**/coverage/
+
+# -----------------------------
+
+# Temporary files
+
+# -----------------------------
+
+tmp/
+temp/
+*.tmp
+
+# -----------------------------
+
+# Docker
+
+# -----------------------------
+
+docker-compose.override.yml
+
+# -----------------------------
+
+# Kubernetes secrets
+
+# -----------------------------
+
+*.secret.yaml
+*.secret.yml
+
+# -----------------------------
+
+# Logs
+
+# -----------------------------
+
+*.log
+
+# -----------------------------
+
+# OS Generated
+
+# -----------------------------
+
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+
+# Vite env files
+
+# -----------------------------
+
+frontend/web/.env
+frontend/web/.env.local
+frontend/web/.env.development.local
+frontend/web/.env.test.local
+frontend/web/.env.production.local
