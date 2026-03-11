@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Omega Laptop",
+    "category": "Electronics",
+    "price": 999.99
+  },
+  {
+    "id": 2,
+    "name": "Omega Headphones",
+    "category": "Audio",
+    "price": 199.99
+  },
+  {
+    "id": 3,
+    "name": "Omega Keyboard",
+    "category": "Computers",
+    "price": 89.99
+  },
+  {
+    "id": 4,
+    "name": "Omega Monitor",
+    "category": "Computers",
+    "price": 249.99
+  }
+]
