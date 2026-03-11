@@ -14,19 +14,18 @@ app.use(cors({
     credentials: true,
 }
 ));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-// app.use(morgan("dev"));
-// app.use(correlationMiddleware);
+app.use(express.json()); // Global JSON parser
+app.use(express.urlencoded({ extended: true })); // Middleware to parse URL-encoded bodies
+app.use(morgan("dev")); // HTTP request logger middleware for development
+app.use(correlationMiddleware); // Middleware to add a unique correlation ID to each request for tracing across services
 
 // checks health of gateway
 app.get('/health', (_, res) => res.json({ status: 'ok' }));
 
 //routes
-import catalogRouter from './routes/catalog';
+import productCatalogRouter from './routes/productCatalog.routes';
 
-app.use('/api/v1/catalog', catalogRouter);
-
+app.use('/apigateway/v1/catalog', productCatalogRouter); // mount router for product catalog service
 
 app.listen(PORT, () => {
   console.log(`Gateway listening on port :${PORT}`);
