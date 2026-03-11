@@ -1,15 +1,12 @@
 package com.shopwithme.catalog.services;
 
-
 import com.shopwithme.catalog.models.Product;
+import com.shopwithme.catalog.repository.interfaces.IProductRepository;
 import com.shopwithme.catalog.services.interfaces.IProductService;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
-import tools.jackson.core.type.TypeReference;
-import tools.jackson.databind.ObjectMapper;
-
-import java.io.InputStream;
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 /**
  * Copyright (c) 2026 OmegaEcommerce
@@ -22,20 +19,22 @@ import java.util.List;
  */
 @Service
 public class ProductService implements IProductService {
-    private final ObjectMapper objectMapper = new ObjectMapper();
+
+    private final IProductRepository productRepository;
+
+    public ProductService(IProductRepository productRepository){
+        this.productRepository = productRepository;
+    }
 
     @Override
     public List<Product> getAllProducts() {
-
-        try {
-
-            ClassPathResource resource = new ClassPathResource("data/products.json");
-            InputStream inputStream = resource.getInputStream();
-
-            return objectMapper.readValue(inputStream, new TypeReference<List<Product>>() {});
-
-        } catch (Exception e) {
-            throw new RuntimeException("Failed to load product data", e);
-        }
+        return productRepository.findAll();
     }
+
+    @Override
+    public Optional<Product> getProductById(UUID id) {
+        return productRepository.findById(id);
+    }
+
+
 }

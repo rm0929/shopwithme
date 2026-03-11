@@ -4,6 +4,8 @@ package com.shopwithme.catalog.services.interfaces;
 import com.shopwithme.catalog.models.Product;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 
 /**
  * Copyright (c) 2026 OmegaEcommerce
@@ -17,4 +19,5 @@ import java.util.List;
 
 public interface IProductService {
     List<Product> getAllProducts();
+    Optional<Product> getProductById(UUID id);
 }
