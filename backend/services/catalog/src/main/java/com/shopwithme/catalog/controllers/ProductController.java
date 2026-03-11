@@ -1,0 +1,32 @@
+package com.shopwithme.catalog.controllers;
+
+
+import com.shopwithme.catalog.models.Product;
+import com.shopwithme.catalog.services.interfaces.IProductService;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
+
+/**
+ * Copyright (c) 2026 OmegaEcommerce
+ * <p>
+ * Class: ProductController
+ * <p>
+ * Description:
+ * ------------------------------------------------
+ * Handles product-related HTTP endpoints.
+ */
+@RestController
+public class ProductController {
+    private final IProductService productService;
+
+    public ProductController(IProductService productService){
+        this.productService = productService;
+    }
+
+    @GetMapping("/api/v1/products")
+    public List<Product> getProducts(){
+        return this.productService.getAllProducts();
+    }
+}
