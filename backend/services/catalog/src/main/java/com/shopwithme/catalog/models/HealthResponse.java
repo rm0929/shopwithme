@@ -2,7 +2,7 @@ package com.shopwithme.catalog.models;
 
 
 /**
- * Copyright (c) 2026 OmegaEcommerce
+ * Copyright (c) 2026 shopwithme
  * <p>
  * Class: HealthResponse
  * <p>

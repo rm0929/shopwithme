@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 /**
- * Copyright (c) 2026 OmegaEcommerce
+ * Copyright (c) 2026 shopwithme
  *
  * Class: HealthController
  *
@@ -19,7 +19,7 @@ import java.util.Map;
 @RestController
 public class HealthController {
 
-    @GetMapping("/health")
+    @GetMapping("/api/v1/health")
     public HealthResponse health(){
         return new HealthResponse("ok", "catalog");
     }

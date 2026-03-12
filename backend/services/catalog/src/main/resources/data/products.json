@@ -1,90 +1,231 @@
-[
-  {
-    "id": "2b1e1c4c-71a2-4b5c-9c3c-1e6bfc1d1111",
-    "sku": "OM-LAP-001",
-    "slug": "omega-ultrabook-14",
-    "name": "Omega Ultrabook 14",
-    "brand": "Omega",
-    "shortDescription": "Lightweight performance laptop designed for work and everyday productivity.",
-    "currency": "USD",
-    "price": 999.99,
-    "inStock": true,
-    "featured": true,
-    "status": "ACTIVE",
-    "thumbnailUrl": "/images/products/omega-ultrabook-14.jpg",
-    "categoryIds": ["electronics", "computers", "laptops"],
-    "tags": ["laptop", "ultrabook", "work"],
-    "attributes": {
-      "ram": "16GB",
-      "storage": "512GB SSD",
-      "processor": "Intel i7",
-      "screenSize": "14 inch"
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "sku": "SWM-NKE-AIR-001",
+      "name": "Classic Running Shoes",
+      "slug": "classic-running-shoes",
+      "description": "Lightweight performance running shoes with responsive cushioning. Engineered for daily runs and all-day comfort. Features breathable mesh upper and durable rubber outsole.",
+      "shortDescription": "Lightweight performance running shoes for daily runs",
+      "brand": {
+        "id": "brand_nike",
+        "name": "Nike"
+      },
+      "category": {
+        "id": "cat_footwear",
+        "name": "Footwear",
+        "path": ["Apparel", "Footwear", "Running"]
+      },
+      "pricing": {
+        "price": 129.99,
+        "compareAtPrice": 159.99,
+        "currency": "USD",
+        "costPerItem": 45.00
+      },
+      "images": [
+        {
+          "url": "https://cdn.shopwithme.com/products/prod_001/1.jpg",
+          "alt": "Classic Running Shoes - Front View",
+          "sortOrder": 0
+        },
+        {
+          "url": "https://cdn.shopwithme.com/products/prod_001/2.jpg",
+          "alt": "Classic Running Shoes - Side View",
+          "sortOrder": 1
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_001_s_black",
+          "sku": "SWM-NKE-AIR-001-S-BLK",
+          "price": 129.99,
+          "attributes": {
+            "size": "S",
+            "color": "Black"
+          },
+          "inventory": {
+            "quantity": 42,
+            "trackInventory": true,
+            "lowStockThreshold": 5
+          }
+        },
+        {
+          "id": "var_001_m_black",
+          "sku": "SWM-NKE-AIR-001-M-BLK",
+          "price": 129.99,
+          "attributes": {
+            "size": "M",
+            "color": "Black"
+          },
+          "inventory": {
+            "quantity": 38,
+            "trackInventory": true,
+            "lowStockThreshold": 5
+          }
+        }
+      ],
+      "inventory": {
+        "trackInventory": true,
+        "quantity": 80,
+        "lowStockThreshold": 5,
+        "allowBackorder": false
+      },
+      "attributes": {
+        "weight": "0.8 kg",
+        "dimensions": "30 x 20 x 12 cm",
+        "material": "Mesh, Rubber"
+      },
+      "seo": {
+        "title": "Classic Running Shoes | Nike | ShopWithMe",
+        "description": "Shop Nike Classic Running Shoes. Lightweight, breathable, perfect for daily runs. Free shipping on orders over $50."
+      },
+      "status": "ACTIVE",
+      "tags": ["running", "sports", "casual", "nike", "bestseller"],
+      "createdAt": "2025-01-15T10:00:00Z",
+      "updatedAt": "2025-03-01T14:30:00Z"
+    },
+    {
+      "id": "prod_002",
+      "sku": "SWM-APL-WAT-002",
+      "name": "Wireless Bluetooth Earbuds",
+      "slug": "wireless-bluetooth-earbuds",
+      "description": "Premium wireless earbuds with active noise cancellation. 24-hour battery life, IPX5 water resistance, and crystal-clear audio. Perfect for workouts and commutes.",
+      "shortDescription": "Premium wireless earbuds with ANC and 24hr battery",
+      "brand": {
+        "id": "brand_apple",
+        "name": "Apple"
+      },
+      "category": {
+        "id": "cat_electronics",
+        "name": "Electronics",
+        "path": ["Electronics", "Audio", "Earbuds"]
+      },
+      "pricing": {
+        "price": 249.99,
+        "compareAtPrice": 279.99,
+        "currency": "USD",
+        "costPerItem": 120.00
+      },
+      "images": [
+        {
+          "url": "https://cdn.shopwithme.com/products/prod_002/1.jpg",
+          "alt": "Wireless Bluetooth Earbuds",
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_002_white",
+          "sku": "SWM-APL-WAT-002-WHT",
+          "price": 249.99,
+          "attributes": {
+            "color": "White"
+          },
+          "inventory": {
+            "quantity": 25,
+            "trackInventory": true,
+            "lowStockThreshold": 3
+          }
+        }
+      ],
+      "inventory": {
+        "trackInventory": true,
+        "quantity": 25,
+        "lowStockThreshold": 3,
+        "allowBackorder": false
+      },
+      "attributes": {
+        "weight": "0.05 kg",
+        "batteryLife": "24 hours",
+        "connectivity": "Bluetooth 5.2"
+      },
+      "seo": {
+        "title": "Wireless Bluetooth Earbuds | Apple | ShopWithMe",
+        "description": "Premium wireless earbuds with ANC. 24hr battery, IPX5 water resistance. Free shipping."
+      },
+      "status": "ACTIVE",
+      "tags": ["audio", "wireless", "bluetooth", "earbuds", "apple"],
+      "createdAt": "2025-02-01T09:00:00Z",
+      "updatedAt": "2025-03-10T11:00:00Z"
+    },
+    {
+      "id": "prod_003",
+      "sku": "SWM-HOM-BLK-003",
+      "name": "Organic Cotton T-Shirt",
+      "slug": "organic-cotton-tshirt",
+      "description": "Sustainable organic cotton t-shirt. Soft, breathable fabric. Perfect for everyday wear. GOTS certified organic cotton.",
+      "shortDescription": "Sustainable GOTS certified organic cotton t-shirt",
+      "brand": {
+        "id": "brand_generic",
+        "name": "ShopWithMe Essentials"
+      },
+      "category": {
+        "id": "cat_apparel",
+        "name": "Apparel",
+        "path": ["Apparel", "Tops", "T-Shirts"]
+      },
+      "pricing": {
+        "price": 34.99,
+        "compareAtPrice": null,
+        "currency": "USD",
+        "costPerItem": 12.00
+      },
+      "images": [
+        {
+          "url": "https://cdn.shopwithme.com/products/prod_003/1.jpg",
+          "alt": "Organic Cotton T-Shirt",
+          "sortOrder": 0
+        }
+      ],
+      "variants": [
+        {
+          "id": "var_003_s_navy",
+          "sku": "SWM-HOM-BLK-003-S-NVY",
+          "price": 34.99,
+          "attributes": {
+            "size": "S",
+            "color": "Navy"
+          },
+          "inventory": {
+            "quantity": 100,
+            "trackInventory": true,
+            "lowStockThreshold": 10
+          }
+        },
+        {
+          "id": "var_003_m_navy",
+          "sku": "SWM-HOM-BLK-003-M-NVY",
+          "price": 34.99,
+          "attributes": {
+            "size": "M",
+            "color": "Navy"
+          },
+          "inventory": {
+            "quantity": 150,
+            "trackInventory": true,
+            "lowStockThreshold": 10
+          }
+        }
+      ],
+      "inventory": {
+        "trackInventory": true,
+        "quantity": 250,
+        "lowStockThreshold": 10,
+        "allowBackorder": false
+      },
+      "attributes": {
+        "weight": "0.2 kg",
+        "material": "100% Organic Cotton",
+        "care": "Machine wash cold"
+      },
+      "seo": {
+        "title": "Organic Cotton T-Shirt | Sustainable Fashion | ShopWithMe",
+        "description": "GOTS certified organic cotton t-shirt. Sustainable, soft, breathable. Multiple colors and sizes."
+      },
+      "status": "ACTIVE",
+      "tags": ["organic", "sustainable", "cotton", "basics", "essentials"],
+      "createdAt": "2025-01-20T08:00:00Z",
+      "updatedAt": "2025-02-28T16:45:00Z"
     }
-  },
-  {
-    "id": "5e4c3b2a-1234-4bcd-9b88-8e55f1112222",
-    "sku": "OM-AUD-001",
-    "slug": "omega-noise-cancel-headphones",
-    "name": "Omega Noise Cancel Headphones",
-    "brand": "Omega",
-    "shortDescription": "Wireless over-ear headphones with active noise cancellation.",
-    "currency": "USD",
-    "price": 199.99,
-    "inStock": true,
-    "featured": true,
-    "status": "ACTIVE",
-    "thumbnailUrl": "/images/products/omega-noise-cancel-headphones.jpg",
-    "categoryIds": ["electronics", "audio", "headphones"],
-    "tags": ["audio", "wireless", "noise-cancelling"],
-    "attributes": {
-      "wireless": "true",
-      "batteryLife": "30h",
-      "noiseCancellation": "true",
-      "color": "Black"
-    }
-  },
-  {
-    "id": "9a111c22-45de-4fa8-a1b0-33ffcc889999",
-    "sku": "OM-KEY-001",
-    "slug": "omega-mechanical-keyboard",
-    "name": "Omega Mechanical Keyboard",
-    "brand": "Omega",
-    "shortDescription": "Compact mechanical keyboard ideal for gaming and productivity.",
-    "currency": "USD",
-    "price": 89.99,
-    "inStock": true,
-    "featured": false,
-    "status": "ACTIVE",
-    "thumbnailUrl": "/images/products/omega-mechanical-keyboard.jpg",
-    "categoryIds": ["electronics", "computers", "keyboards"],
-    "tags": ["keyboard", "mechanical", "gaming"],
-    "attributes": {
-      "switchType": "Blue",
-      "layout": "TKL",
-      "backlight": "RGB",
-      "connection": "Wired"
-    }
-  },
-  {
-    "id": "0c8eaa22-1f77-44d3-bdd3-7e9cbb884444",
-    "sku": "OM-MON-001",
-    "slug": "omega-4k-monitor-27",
-    "name": "Omega 4K Monitor 27",
-    "brand": "Omega",
-    "shortDescription": "27 inch 4K IPS monitor built for creators and developers.",
-    "currency": "USD",
-    "price": 249.99,
-    "inStock": false,
-    "featured": false,
-    "status": "ACTIVE",
-    "thumbnailUrl": "/images/products/omega-4k-monitor-27.jpg",
-    "categoryIds": ["electronics", "computers", "monitors"],
-    "tags": ["monitor", "4k", "productivity"],
-    "attributes": {
-      "resolution": "3840x2160",
-      "refreshRate": "60Hz",
-      "panelType": "IPS",
-      "screenSize": "27 inch"
-    }
-  }
-]
+  ]
+}
