@@ -1,0 +1,11 @@
+# Override for JSON storage (no PostgreSQL)
+# Usage: docker compose -f docker-compose.yml -f docker-compose.json.yml up
+services:
+  catalog:
+    environment:
+      CATALOG_STORAGE: json
+    depends_on: []
+
+  postgres:
+    profiles:
+      - postgres
