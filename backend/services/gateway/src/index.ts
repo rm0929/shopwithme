@@ -25,7 +25,7 @@ app.get('/health', (_, res) => res.json({ status: 'ok' }));
 //routes
 import productCatalogRouter from './routes/productCatalog.routes';
 
-app.use('/apigateway/v1/catalog', productCatalogRouter); // mount router for product catalog service
+app.use('/apigateway/v1/products', productCatalogRouter); // mount router for product catalog service
 
 app.listen(PORT, () => {
   console.log(`Gateway listening on port :${PORT}`);
